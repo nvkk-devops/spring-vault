@@ -1,0 +1,23 @@
+spring.application.name: venkata-app2
+
+## NOTE: Inside 'Vault-console-UI' if the default 'secret' backend is used. Then below steps not required
+## NOTE: Configure custom back-end from vault-console-ui
+
+spring.cloud.vault:
+  token: "s.ZiwgdPz9hcGPeA2jPLtgz7l4"
+  uri: http://localhost:8200
+  application-name: venkata-app2
+
+## Validates /secret/<application-name>/.  Default <application-name>=application
+## https://cloud.spring.io/spring-cloud-vault/multi/multi_vault.config.backends.html
+
+#spring.cloud.vault.generic.enabled: true
+#spring.cloud.vault.generic.backend: venkatasecrets
+#spring.cloud.vault.generic.profile-separator: '/'
+#spring.cloud.vault.generic.default-context: venkata-mongodb
+#spring.cloud.vault.generic.application-name: venkatasecrets
+#spring.cloud.vault.kv.enabled: true
+#spring.cloud.vault.kv.backend: venkatasecrets
+#spring.cloud.vault.kv.profile-separator: '/'
+#spring.cloud.vault.kv.default-context: mongodb
+#spring.cloud.vault.kv.application-name: venkatasecrets
